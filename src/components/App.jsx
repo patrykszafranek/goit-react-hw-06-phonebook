@@ -1,16 +1,15 @@
-export const App = () => {
+import css from './App.module.css';
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className={css.box}>
+      <h2 className={css.title}>Phonebook</h2>
+      <ContactForm />
+      <h2 className={css.title}>Contacts</h2>
+      <Filter />
+      <ContactList />
     </div>
   );
 };
+
+export default App;
